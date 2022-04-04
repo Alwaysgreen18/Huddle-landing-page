@@ -126,6 +126,7 @@ body {
     }
 
     .main-text {
+        margin-bottom: 20px;
         font-size: 22px;
         text-align: center;
     }
@@ -144,9 +145,10 @@ body {
     .icons {
         display: flex;
         position: absolute;
+        /* top: 90%; */
         bottom: 0;
         left: 32%;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
     
     .fa-brands {
