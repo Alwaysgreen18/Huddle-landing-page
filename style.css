@@ -145,7 +145,7 @@ body {
     .icons {
         display: flex;
         position: absolute;
-        /* top: 90%; */
+        top: 90%;
         bottom: 0;
         left: 32%;
         margin-top: 60px;
