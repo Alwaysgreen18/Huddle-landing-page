@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    padding: 40px;
+}
+
+.logo {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    height: 30px;
+}
+
+.main-picture {
+    margin-top: 20px;
+}
+
+.main-text {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.sub-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.register {
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+/* for large screen */
+
+@media (min-width: 900px) {
+
+    .header {
+        height: 110vh;
+        background:  url("images/bg-desktop.svg"), rgb(103, 75, 175);
+    }
+
+    span {
+        display: block;
+    }
+
+    .text-container {
+        padding: 40px;
+    }
+
+    .sub-text {
+        width: 500px;
+    }
+
+    .register {
+    width: 30%;
+}
+
+    .register:hover {
+        cursor: pointer;
+        background: #e882e8;
+    }
+
+    .icons {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 84.5%;
+        float: right;
+        margin-bottom: -60px;
+    }
+
+    .icons:hover {
+        cursor: pointer;
+    }
+    
+    .fa-brands {
+        margin: 5px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        padding: 10px;
+        color: white;
+    }
+
+    .fa-brands:hover {
+        border: 2px solid #e882e8;
+        color: #e882e8;
+    }
+}
+
+/* for mobile screen */
+
+@media (max-width: 375px) {
+
+    .header {
+        max-width: 375px;
+        height: 70vh;
+        background:  url("images/bg-mobile.svg"), rgb(103, 75, 175);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .main-picture {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .main-text {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .sub-text {
+        text-align: center;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .register {
+        width: 70%;
+        margin: 0 15%;
+    }
+    
+    .icons {
+        display: flex;
+        position: absolute;
+        bottom: 30%;
+        left: 32%;
+        margin-bottom: 30px;
+    }
+    
+    .fa-brands {
+        margin: 5px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        padding: 10px;
+        color: #fff;
+    }
+
+}
