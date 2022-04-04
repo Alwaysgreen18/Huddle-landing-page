@@ -112,7 +112,7 @@ body {
 
     .header {
         /* width: 100%; */
-        height: 100vh;
+        height: 110vh;
         background:  url("images/bg-mobile.svg"), rgb(103, 75, 175);
     }
 
