@@ -26,7 +26,7 @@ body {
         /* background: url("images/bg-mobile.svg"), rgb(103, 75, 175); */
         max-height: 100vh;
         max-width: 375px;
-        max-height: 100vh;
+        /* max-height: 100vh; */
     }   
 
     .logo {
