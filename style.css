@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-
+/* bg - rgb(103, 75, 175) */
+/* text - color: rgba(255, 255, 255, 0.7); */
+/* hover - #e882e8 */
+/* brands:hover - #e882e8 */
 * {
     padding: 0;
     margin: 0;
@@ -8,155 +10,90 @@
 }
 
 body {
+    font-size: 10px;
+    /* padding: 30px; */
+    /* background: url("images/bg-mobile.svg"), rgb(103, 75, 175) ; */
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    position: absolute;
-    display: flex;
-    padding: 40px;
-}
+@media (max-width: 375px) {
 
-.logo {
-    position: relative;
-    top: 30px;
-    left: 50px;
-    height: 30px;
-}
-
-.main-picture {
-    margin-top: 20px;
-}
-
-.main-text {
-    text-transform: capitalize;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-.sub-text {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.register {
-    height: 40px;
-    border-radius: 30px;
-    border-style: none;
-}
-
-/* for large screen */
-
-@media (min-width: 900px) {
+    body {
+        padding: 30px;
+        background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
+    }
 
     .header {
+        height: 100vh;
+        width: 375px;
+        max-height: 100vh;
+    }   
+
+    .logo {
+        height: 30px;
+        margin: 15px 0 15px 10px;
+    }
+
+    .container {
+        display: flex;
         width: 100%;
-        height: 110vh;
-        background:  url("images/bg-desktop.svg"), rgb(103, 75, 175);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-picture {
+        height: 25vh;
+    }
+
+    .main-text {
+        /* width: 100%; */
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-align: center;
+        color: #fff;
+        margin: 30px 0;
+        font-weight: 600;
     }
 
     span {
         display: block;
     }
 
-    .text-container {
-        padding: 40px;
-    }
-
     .sub-text {
-        width: 500px;
+        /* padding-right: 20px; */
+        width: 330px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 50px;
     }
 
-    .register {
-    width: 30%;
-}
-
-    .register:hover {
-        cursor: pointer;
-        background: #e882e8;
+    .btn {
+        width: 60%;
+        height: 50px;
+        border-style: none;
+        border-radius: 30px;
+        background: #fff;
+        color: rgb(103, 75, 175);
+        margin: 0 0 80px 65px;
+        font-size: 1rem;
+        font-weight: 400;
+        /* text-align: center; */
     }
 
     .icons {
         display: flex;
-        position: absolute;
-        bottom: 0;
-        left: 84.5%;
-        float: right;
-        margin-bottom: -60px;
+        justify-content: center;
     }
 
-    .icons:hover {
-        cursor: pointer;
-    }
-    
     .fa-brands {
-        margin: 5px;
+        font-size: 1.1rem;
         border: 2px solid #fff;
-        border-radius: 100%;
-        padding: 10px;
-        color: white;
-    }
-
-    .fa-brands:hover {
-        border: 2px solid #e882e8;
-        color: #e882e8;
-    }
-}
-
-/* for mobile screen */
-
-@media (max-width: 375px) {
-
-    .header {
-        /* width: 100%; */
-        height: 110vh;
-        background:  url("images/bg-mobile.svg"), rgb(103, 75, 175);
-    }
-
-    .container {
-        flex-direction: column;
-    }
-    
-    .main-picture {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .main-text {
-        margin-bottom: 20px;
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .sub-text {
-        text-align: center;
-        font-size: 14px;
-        padding-right: 10px;
-    }
-
-    .register {
-        width: 70%;
-        margin: 0 15%;
-    }
-    
-    .icons {
-        display: flex;
-        position: absolute;
-        /* top: 90%; */
-        bottom: 0;
-        left: 32%;
-        margin-top: 60px;
-    }
-    
-    .fa-brands {
-        margin: 5px;
-        border: 2px solid #fff;
-        border-radius: 100%;
-        padding: 10px;
+        border-radius: 50%;
+        padding: 6px;
+        margin-left: 10px;
         color: #fff;
     }
-
 }
+
