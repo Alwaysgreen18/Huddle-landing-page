@@ -10,20 +10,20 @@
 }
 
 body {
-    font-size: 10px;
+    /* font-size: 10px; */
     font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 375px) {
 
-    /* body {
-        padding: 30px;
+    body {
+        /* padding: 30px; */
         background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
-    } */
+    }
 
     .header {
         padding: 30px;
-        background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
+        /* background: url("images/bg-mobile.svg"), rgb(103, 75, 175); */
         max-height: 100vh;
         max-width: 375px;
         max-height: 100vh;
@@ -60,9 +60,10 @@ body {
     }
 
     .sub-text {
-        width: 330px;
+        padding-right: 10px;
+        /* width: 330px; */
         text-align: center;
-        font-size: 1rem;
+        font-size: 15px;
         font-weight: 400;
         margin-bottom: 50px;
     }
