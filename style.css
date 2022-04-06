@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-/* bg - rgb(103, 75, 175) */
-/* text - color: rgba(255, 255, 255, 0.7); */
-/* hover - #e882e8 */
-/* brands:hover - #e882e8 */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,23 +7,130 @@
 }
 
 body {
-    /* font-size: 10px; */
     font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    padding: 30px;
+}
+
+.logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-text {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+}
+
+span {
+    display: block;
+}
+
+.sub-text {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn {
+    height: 6vh;
+    color: rgb(103, 75, 175);
+    border-style: none;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.icons {
+    display: flex;
+    padding: 40px 0;
+}
+
+.fa-brands {
+    margin-left: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (min-width: 900px) {
+
+    body {
+        background: url("images/bg-desktop.svg"), rgb(103, 75, 175);
+    }
+
+    .header {
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .logo {
+        margin-left: 18px;
+    }
+
+    .text-container {
+        margin: 50px;
+    }
+
+    .main-text {
+        font-size: 2.1rem;
+    }
+
+    .sub-text {
+        width: 450px;
+        font-size: .9rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+        width: 35%;
+    }
+
+    .icons {
+        display: flex;
+        width: 95%;
+        justify-content: end;
+    }
+
+    .fa-brands {
+        margin-left: 15px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        color: #fff;
+        background: #e882e8;
+        box-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
+    }
+
+    .fa-brands:hover {
+        cursor: pointer;
+        color: #e882e8;
+        border: 2px solid #e882e8;
+    }
+    
 }
 
 @media (max-width: 375px) {
 
     body {
-        /* padding: 30px; */
         background: url("images/bg-mobile.svg"), rgb(103, 75, 175);
     }
 
     .header {
-        padding: 30px;
-        /* background: url("images/bg-mobile.svg"), rgb(103, 75, 175); */
         max-height: 100vh;
         max-width: 375px;
-        /* max-height: 100vh; */
     }   
 
     .logo {
@@ -35,7 +139,6 @@ body {
     }
 
     .container {
-        display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -48,51 +151,28 @@ body {
 
     .main-text {
         font-size: 1.5rem;
-        text-transform: capitalize;
         text-align: center;
         color: #fff;
         margin: 30px 0;
-        font-weight: 600;
-    }
-
-    span {
-        display: block;
     }
 
     .sub-text {
         padding-right: 10px;
-        /* width: 330px; */
         text-align: center;
         font-size: 15px;
-        font-weight: 400;
         margin-bottom: 50px;
     }
 
     .btn {
         width: 60%;
-        height: 50px;
-        border-style: none;
-        border-radius: 30px;
-        background: #fff;
-        color: rgb(103, 75, 175);
+        /* height: 50px; */
         margin: 0 0 50px 65px;
         font-size: 1rem;
-        font-weight: 400;
     }
 
     .icons {
-        display: flex;
         justify-content: center;
     }
 
-    .fa-brands {
-        margin-bottom: 20px;
-        font-size: 1.1rem;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        padding: 6px;
-        margin-left: 10px;
-        color: #fff;
-    }
 }
 
